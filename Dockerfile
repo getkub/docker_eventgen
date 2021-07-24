@@ -3,7 +3,7 @@ FROM python:3-slim
 VOLUME /src
 
 RUN apt-get update && \
-  apt-get install -y libxml2-dev libxslt-dev lib32z1-dev python-lxml libmagic-dev libjpeg-dev
+  apt-get install -y libxml2-dev libxslt-dev lib32z1-dev python-lxml libmagic-dev libjpeg-dev git-all curl
   
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 
